@@ -24,3 +24,9 @@ export function sendMessageToDatabase(message){
     }
 }
 
+export function clearInput(name){
+    return{
+        type: types.CLEAR_INPUT,
+        payload: name
+    }
+}
