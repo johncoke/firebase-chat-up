@@ -9,7 +9,7 @@ const Nav = props => {
     return (
         <nav style={navStyle} className="blue">
             <div className="nav-wrapper">
-                <Link to='/' className="brand-logo">Chatterbate</Link>
+                <Link to='/' className="brand-logo">Chatterbait</Link>
 
                 <ul className="right">
                     <li>
