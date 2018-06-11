@@ -3,6 +3,7 @@ import db from '../firebase';
 import {connect} from 'react-redux';
 import {updateChat} from '../actions'
 import { link } from 'react-router-dom';
+import MessageInput from './message_input';
 
 class Chat extends Component{
 
@@ -21,10 +22,11 @@ class Chat extends Component{
         });
         return(
             <div>
-                <h1 className="center">Chatterbate Chat Room</h1>
+                <h1 className="center">Chatterbait Chat Room</h1>
                 <ul className="collection">
                     {chatElements}
                 </ul>
+                <MessageInput/>
             </div>
         )
     }
