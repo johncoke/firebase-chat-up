@@ -5,10 +5,16 @@ import {updateInput, sendMessageToDatabase, clearInput} from '../actions';
 class MessageInput extends Component{
 
     sendMessage(event){
+        
         event.preventDefault();
-        console.log('Message: ', this.props.message);
-        sendMessageToDatabase(this.props.message);
-        this.props.clearInput('message');
+
+        const {message, roomId, clearInput} = this.props;
+
+        console.log('Message: ', message);
+
+        sendMessageToDatabase(roomId, message);
+
+        clearInput('message');
     }
 
     updateMessage(event){
