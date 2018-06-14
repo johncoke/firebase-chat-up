@@ -10,7 +10,6 @@ class MessageInput extends Component{
 
         const {message, roomId, clearInput} = this.props;
 
-        console.log('Message: ', message);
 
         sendMessageToDatabase(roomId, message);
 

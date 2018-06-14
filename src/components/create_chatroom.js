@@ -9,7 +9,6 @@ class CreateChatRoom extends Component{
 
         const key = await createRoom(this.props.roomName);
 
-        console.log('Key in Component: ', key);
         
         this.props.history.push(`/chat/${key}`);
     }
